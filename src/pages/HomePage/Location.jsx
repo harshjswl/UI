@@ -2,8 +2,9 @@ import React from 'react'
 
 function Location() {
   return (
-    <div>
+    <div className='min-h-screen flex justify-center items-center'>
       
+      something
     </div>
   )
 }

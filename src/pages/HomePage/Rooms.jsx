@@ -1,11 +1,16 @@
 import React from 'react';
-import delsux from '../assets/delsux.png';
-import cozye from '../assets/cozye.png';
-import family from '../assets/family.png';
-import gardenview from '../assets/gardeview.png';
+import delsux from '../../assets/delsux.png';
+import cozye from '../../assets/cozye.png';
+import family from '../../assets/family.png';
+import gardenview from '../../assets/gardeview.png';
 import './Rooms.css';
 
 function Rooms() {
+
+  const handleMoreClick =()=>{
+    window.location.href = '/roomspage';
+  }
+
   return (
     <section className="rooms-section">
       <div className="rooms-header">
@@ -39,7 +44,7 @@ function Rooms() {
       </div>
 
       <div className="rooms-footer">
-        <button className="watch-more-btn">Watch More</button>
+        <button className="watch-more-btn" onClick={handleMoreClick}>Watch More</button>
       </div>
     </section>
   );

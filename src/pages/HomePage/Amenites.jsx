@@ -2,8 +2,8 @@ import React from 'react'
 
 function Amenites() {
   return (
-    <div>
-      
+    <div className='min-h-screen flex justify-center items-center'>
+      something
     </div>
   )
 }

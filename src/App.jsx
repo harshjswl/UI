@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./component/Navbar";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Amenites from "./pages/Amenites";
-import Contact from "./pages/Contact";
-import Location from "./pages/Location";
-import Rooms from "./pages/Rooms";
+import Home from "./pages/HomePage/Home";
+import About from "./pages/HomePage/About";
+import Amenites from "./pages/HomePage/Amenites";
+import Contact from "./pages/HomePage/Contact";
+import Location from "./pages/HomePage/Location";
+import Rooms from "./pages/HomePage/Rooms";
+import AboutPage from "./pages/AboutPage/AboutPage";
+import RoomsPage from "./pages/RoomsPage/RoomsPage";
 
 function App() {
   return (
@@ -13,8 +15,8 @@ function App() {
       <Navbar />  
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about"  element={<About />} />
-        <Route path="/rooms" element={<Rooms />} />
+        <Route path="/aboutPage"  element={<AboutPage />} />
+        <Route path="/roomsPage" element={<RoomsPage />} />
         <Route path="/amenities" element={<Amenites/>} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/location" element={<Location />} />
