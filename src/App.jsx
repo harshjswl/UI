@@ -1,18 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./component/Navbar";
+import Navbar from "./component/HomeNavbar";
 import Home from "./pages/HomePage/Home";
 import About from "./pages/HomePage/About";
 import Amenites from "./pages/HomePage/Amenites";
 import Contact from "./pages/HomePage/Contact";
 import Location from "./pages/HomePage/Location";
-import Rooms from "./pages/HomePage/Rooms";
 import AboutPage from "./pages/AboutPage/AboutPage";
 import RoomsPage from "./pages/RoomsPage/RoomsPage";
 
 function App() {
   return (
     <Router>
-      <Navbar />  
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/aboutPage"  element={<AboutPage />} />
